@@ -1,5 +1,6 @@
 <template>
   <div>
+      <h1>{{msg}}</h1>
       用户名:<input type="text" v-model="loginForm.username" placeholder="请输入用户名"/>
       <br><br>
       密码： <input type="password" v-model="loginForm.password" placeholder="请输入密码"/>
@@ -13,6 +14,7 @@
           :value="item.value">
         </el-option>
       </el-select>
+  </div>
 </template>
 
 <script>
@@ -65,3 +67,6 @@
   }
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+</style>
